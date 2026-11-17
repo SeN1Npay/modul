@@ -1,0 +1,20 @@
+info:
+  name: updateManager
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/manager/updateManager?iduser=1&idmanager=1
+  params:
+  - name: iduser
+    value: '1'
+    type: query
+  - name: idmanager
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

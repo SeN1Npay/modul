@@ -1,0 +1,20 @@
+info:
+  name: addCustomer
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/customer/addCustomer?iduser=1&phone=%2B79001234567
+  params:
+  - name: iduser
+    value: '1'
+    type: query
+  - name: phone
+    value: '+79001234567'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

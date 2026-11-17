@@ -1,0 +1,20 @@
+info:
+  name: updateInterface
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/interface/updateInterface?name=USB&idinterface=1
+  params:
+  - name: name
+    value: USB
+    type: query
+  - name: idinterface
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: addSaleitem
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/saleitem/addSaleitem?idsale=1&idproduct=1&quantity=1
+  params:
+  - name: idsale
+    value: '1'
+    type: query
+  - name: idproduct
+    value: '1'
+    type: query
+  - name: quantity
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

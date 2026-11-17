@@ -1,0 +1,6 @@
+info:
+  name: Manager
+  type: folder
+  seq: 8
+request:
+  auth: inherit

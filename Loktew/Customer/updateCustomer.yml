@@ -1,0 +1,23 @@
+info:
+  name: updateCustomer
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/customer/updateCustomer?iduser=1&phone=%2B79001234567&idcustomer=1
+  params:
+  - name: iduser
+    value: '1'
+    type: query
+  - name: phone
+    value: '+79001234567'
+    type: query
+  - name: idcustomer
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

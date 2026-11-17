@@ -1,0 +1,20 @@
+info:
+  name: updateSeller
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/seller/updateSeller?iduser=1&idseller=1
+  params:
+  - name: iduser
+    value: '1'
+    type: query
+  - name: idseller
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

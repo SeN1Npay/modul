@@ -1,0 +1,54 @@
+info:
+  name: addUser
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/user/addUser?lastname=Иванова&firstname=Елена&middlename=Петровна&birthdate=1980-05-15&employmentdate=2010-09-01&passport=4509
+    123456&snils=123-456-789 00&email=ivanova.elena@yandex.ru&photolink=/images/ivanova.jpg&login=ivanova_e&passwordhash=$2a$10$X8z&status=ACTIVE&registrationcode=001
+  params:
+  - name: lastname
+    value: Иванова
+    type: query
+  - name: firstname
+    value: Елена
+    type: query
+  - name: middlename
+    value: Петровна
+    type: query
+  - name: birthdate
+    value: 1980-05-15
+    type: query
+  - name: employmentdate
+    value: 2010-09-01
+    type: query
+  - name: passport
+    value: 4509 123456
+    type: query
+  - name: snils
+    value: 123-456-789 00
+    type: query
+  - name: email
+    value: ivanova.elena@yandex.ru
+    type: query
+  - name: photolink
+    value: /images/ivanova.jpg
+    type: query
+  - name: login
+    value: ivanova_e
+    type: query
+  - name: passwordhash
+    value: $2a$10$X8z
+    type: query
+  - name: status
+    value: ACTIVE
+    type: query
+  - name: registrationcode
+    value: '001'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

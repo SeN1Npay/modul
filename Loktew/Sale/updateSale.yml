@@ -1,0 +1,26 @@
+info:
+  name: updateSale
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/sale/updateSale?idcustomer=1&idseller=1&saledate=2026-10-21&idsale=1
+  params:
+  - name: idcustomer
+    value: '1'
+    type: query
+  - name: idseller
+    value: '1'
+    type: query
+  - name: saledate
+    value: '2026-10-21'
+    type: query
+  - name: idsale
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: updateCharacteristic
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/characteristic/updateCharacteristic?name=%D0%9E%D0%B1%D1%8A%D1%91%D0%BC+%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8&unit=%D0%93%D0%91&idcharacteristic=1
+  params:
+  - name: name
+    value: Объём памяти
+    type: query
+  - name: unit
+    value: ГБ
+    type: query
+  - name: idcharacteristic
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

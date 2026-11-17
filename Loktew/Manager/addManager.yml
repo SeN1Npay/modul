@@ -1,0 +1,17 @@
+info:
+  name: addManager
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/manager/addManager?iduser=1
+  params:
+  - name: iduser
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

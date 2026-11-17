@@ -1,0 +1,17 @@
+info:
+  name: deleteSeller
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/seller/deleteSeller?idseller=0
+  params:
+  - name: idseller
+    value: '0'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

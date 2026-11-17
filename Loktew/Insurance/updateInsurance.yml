@@ -1,0 +1,32 @@
+info:
+  name: updateInsurance
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/insurance/updateInsurance?idsaleitem=1&policynumber=TEST-INS-001&startdate=2026-10-21&enddate=2027-10-20&cost=1000&idinsurance=1
+  params:
+  - name: idsaleitem
+    value: '1'
+    type: query
+  - name: policynumber
+    value: TEST-INS-001
+    type: query
+  - name: startdate
+    value: '2026-10-21'
+    type: query
+  - name: enddate
+    value: '2027-10-20'
+    type: query
+  - name: cost
+    value: '1000'
+    type: query
+  - name: idinsurance
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

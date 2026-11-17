@@ -1,0 +1,23 @@
+info:
+  name: addSaleservice
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/saleservice/addSaleservice?idsale=1&idservice=1&quantity=1
+  params:
+  - name: idsale
+    value: '1'
+    type: query
+  - name: idservice
+    value: '1'
+    type: query
+  - name: quantity
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

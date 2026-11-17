@@ -1,0 +1,17 @@
+info:
+  name: deleteInsurance
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/insurance/deleteInsurance?idinsurance=0
+  params:
+  - name: idinsurance
+    value: '0'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

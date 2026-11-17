@@ -1,0 +1,17 @@
+info:
+  name: deleteCustomer
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/customer/deleteCustomer?idcustomer=0
+  params:
+  - name: idcustomer
+    value: '0'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

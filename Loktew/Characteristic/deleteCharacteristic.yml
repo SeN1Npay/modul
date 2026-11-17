@@ -1,0 +1,17 @@
+info:
+  name: deleteCharacteristic
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/characteristic/deleteCharacteristic?idcharacteristic=0
+  params:
+  - name: idcharacteristic
+    value: '0'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

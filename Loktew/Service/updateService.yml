@@ -1,0 +1,23 @@
+info:
+  name: updateService
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/service/updateService?name=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&cost=1000&idservice=1
+  params:
+  - name: name
+    value: Настройка оборудования
+    type: query
+  - name: cost
+    value: '1000'
+    type: query
+  - name: idservice
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

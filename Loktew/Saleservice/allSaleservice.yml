@@ -1,0 +1,13 @@
+info:
+  name: allSaleservice
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: http://localhost:8080/Loktew/saleservice/allSaleservice
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

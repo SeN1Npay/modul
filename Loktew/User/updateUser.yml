@@ -1,0 +1,56 @@
+info:
+  name: updateUser
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/user/updateUser?lastname=%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0&firstname=%D0%95%D0%BB%D0%B5%D0%BD%D0%B0&middlename=%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%BD%D0%B0&birthdate=1980-05-15&employmentdate=2010-09-01&passport=4509+123456&snils=123-456-789+00&email=ivanova.elena%40yandex.ru&photolink=%2Fimages%2Fivanova.jpg&login=ivanova_e&passwordhash=%242a%2410%24X8z&status=ACTIVE&registrationcode=001&iduser=1
+  params:
+  - name: lastname
+    value: Иванова
+    type: query
+  - name: firstname
+    value: Елена
+    type: query
+  - name: middlename
+    value: Петровна
+    type: query
+  - name: birthdate
+    value: '1980-05-15'
+    type: query
+  - name: employmentdate
+    value: '2010-09-01'
+    type: query
+  - name: passport
+    value: 4509 123456
+    type: query
+  - name: snils
+    value: 123-456-789 00
+    type: query
+  - name: email
+    value: ivanova.elena@yandex.ru
+    type: query
+  - name: photolink
+    value: /images/ivanova.jpg
+    type: query
+  - name: login
+    value: ivanova_e
+    type: query
+  - name: passwordhash
+    value: $2a$10$X8z
+    type: query
+  - name: status
+    value: ACTIVE
+    type: query
+  - name: registrationcode
+    value: '001'
+    type: query
+  - name: iduser
+    value: '1'
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

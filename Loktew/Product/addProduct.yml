@@ -1,0 +1,35 @@
+info:
+  name: addProduct
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: http://localhost:8080/Loktew/product/addProduct?idlocation=1&idinterface=1&name=%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0&price=15000&quantity=1&peripheral=1&photolink=%2Fimages%2Fproduct.jpg
+  params:
+  - name: idlocation
+    value: '1'
+    type: query
+  - name: idinterface
+    value: '1'
+    type: query
+  - name: name
+    value: Клавиатура
+    type: query
+  - name: price
+    value: '15000'
+    type: query
+  - name: quantity
+    value: '1'
+    type: query
+  - name: peripheral
+    value: '1'
+    type: query
+  - name: photolink
+    value: /images/product.jpg
+    type: query
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
